@@ -3,7 +3,7 @@
 int add_array(int *a, int *b, int n){
   int sum = 0;
   int i = 0;
-  for (i = 0; i <= n + 1; i++) {
+  for (i = 0; i <= n + 1; i++) { //ejecuta bien pero la suma es incorrecta, me esta sumando valores que no pertenecen al vector, la forma correcta sería con el intervalo de 0 a n-1
     sum += abs(a[i]);
     sum += abs(b[i]);
   };
